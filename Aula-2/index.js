@@ -1,0 +1,1 @@
+const valorIngressoAdulto = 10;
