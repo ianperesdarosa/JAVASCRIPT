@@ -12,16 +12,18 @@
                 let a = 6;
                 let b = 5;
                 let c = 2;
+                let nota;
 
-                    
-                if (a + b + c >18){
-                        console.log("Você está aprovado!");	
+                function myBoletim(nota){
+                    if((a + b + c) %2 > 18){
+                        return  "Você está aprovado!";
+                    }
+                    else{
+                        return  "Você está reprovado!";
+                    }
                 }
-                else{
-                        console.log("Você está reprovado!");
-                }
-                    
-
+                
+                console.log(myBoletim(nota));   
                 
                 
 
