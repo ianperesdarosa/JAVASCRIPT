@@ -1,4 +1,4 @@
-let pessoa = {
+const pessoa = {
         nome: 'ian',
         sobreNome: 'Peres',
         sexo: 'Masculino',

@@ -6,7 +6,7 @@ let nota4 = 5;
 let media = (nota1 + nota2 + nota3 + nota4);
 
 function calcularMedia(media){
-    if(media > 24){
+    if(media >= 24){
         return "Aprovado!";
     }
     else {
