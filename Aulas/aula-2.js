@@ -1,3 +1,4 @@
+//Variáveis
 let fName = "Ian";
 let lName = "Peres";
 
