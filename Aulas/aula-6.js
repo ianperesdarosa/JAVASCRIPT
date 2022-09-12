@@ -1,13 +1,13 @@
 //Funções usado os parametros
 
-let car = "volvo";
+let car = "Volvo";
 
-function trocarCar(car, ano){
-    car = car + " " + ano;
+function trocarCar(car) {
+    car = car;
 }
 
 alert(car);
-trocarCar("BMW", 2014)
+trocarCar("BMW")
 alert(car);
 
 //Funções sem parametros
@@ -15,8 +15,7 @@ alert(car);
 let fName = "Ian";
 let lName = "Peres";
 
-function nomeComplet (){
-    return fName + " " + lName;
+function nomeComplet() {
+     alert(fName + " " + lName);
 }
 
-alert(nomeComplet)
