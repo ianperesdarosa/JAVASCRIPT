@@ -1,0 +1,1 @@
+//Elementos de descolamento (Array)
