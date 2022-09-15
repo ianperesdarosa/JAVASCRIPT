@@ -26,7 +26,7 @@ console.log(c);
 //Mesclando concatenados arrays com valores
 
 const z = [1,2,3];
-const y = z.concat("GO!!!");
+const y = z.concat(" GO!!!");
 console.log(y);
 
 //Splice(): Método que adicinoa novos itens a uma arrays
