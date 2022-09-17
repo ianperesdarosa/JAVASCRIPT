@@ -17,7 +17,3 @@ x.splice(3, 0, "Ford");
 //Método slice();
 const z = ["João", "Ana", "Gabi", "Jonathan"];
 z.slice(3, 0);
-
-//Método Reverse();
-const carx = ["BMW", "Subaru", "Toyota", "Nissan"];
-carx.reverse();
