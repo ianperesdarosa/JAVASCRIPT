@@ -8,8 +8,8 @@ For (let i = 0; i < 5; i++) {
 */
 
 //pratica
-
 const cars = ["BMW", "Subaru", "Toyota", "Nissan"];
-for (let num = 0; num < 12; num++) {
-    text += "O número escolhido foi " + num + "<br>";
+
+for (let i = 0; i < cars.length; i++) {
+    text += cars[i] + "<br>";
 }
