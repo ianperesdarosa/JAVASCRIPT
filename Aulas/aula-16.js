@@ -30,7 +30,7 @@ const pessoa = {
 }
 
 for (let key in pessoa){
-    console.log(key, pessoa.nome,);
+    console.log(key, pessoa[key],);
 }
 
 const cores = ["Red", "Blue", "Green", "Black"];
