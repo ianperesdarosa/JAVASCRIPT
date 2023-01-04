@@ -39,3 +39,26 @@ console.log(carName.car, carro.model, carro.year)
 
 
 //Herança
+class car {
+    constructor (brand) {
+        this._carName = brand
+    }
+
+    present () {
+        return "i have a " + this._carName
+    }
+}
+
+class model extends car {
+    constructor (brand, mod){
+        super(brand)
+        this._model = mod
+    }
+
+    show () {
+        return this.present() + " it is a " + this._model
+    }
+}
+
+let myCar = new car ("Ford", "Mustang")
+console.log(myCar.show())
