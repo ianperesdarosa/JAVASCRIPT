@@ -39,14 +39,3 @@ console.log(card.name, identificacao.age, identificacao.data)
 
 //Herança
 
-class cardDeIdentificacao extends identificacao {
-    constructor (name, age, data, card) {
-        super(name)
-        this.card = card
-    }
-
-    present () {
-        return ``
-    }
-
-}
