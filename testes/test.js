@@ -1,8 +1,8 @@
-const obj = {
-    nome: "Ian",
-    sname: "Peres",
-    meuNome: function () {
-        console.log(`${this.nome} ${this.sname}`)
-    }
+setInterval(myFunction, 1000)
+
+function myFunction() {
+    let d = new Date()
+    console.log( d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds())
+
 }
-obj.meuNome()
+
