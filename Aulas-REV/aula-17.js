@@ -15,12 +15,13 @@ console.log(dados.display())
 
 //Getters & Setters
 class identificacao  {
-    constructor (name) {
-        this._cidadao = name
+    constructor (name, sobreNome) {
+        this._name = name
+        this._sobreNome = sobreNome
     }
 
     get name () {
-        return this._cidadao
+        return `${this._name} ${this._sobreNome}`
     }
 
     set age (age) {
@@ -32,23 +33,23 @@ class identificacao  {
     }
 }
 
-let card = new identificacao("Ian Peres Da Rosa")
+let card = new identificacao("Ian", "Peres")
 identificacao.age = 18
 identificacao.data = 2004
 console.log(card.name, identificacao.age, identificacao.data)
 
 //Herança
 class myCard extends identificacao {
-    constructor (cidadao, data, age) {
-        super(cidadao)
-        this._data = data
+    constructor (name, sobreNome, age, data) {
+        super(name, sobreNome)
         this._age = age
+        this._data = data
     }
 
     display () {
-        return `Nome: ${this._cidadao} Nascimento: ${this._data} Idade:${this._age}`
+        return `Nome:${this._name} Sobre Nome:${this._sobreNome} Nascimento:${this._data} Idade:${this._age}`
     }
 }
 
-let inf = new myCard ("Ian", 2004, 18)
+let inf = new myCard ("Ian", "Peres", 18, 2004)
 console.log(inf.display())
