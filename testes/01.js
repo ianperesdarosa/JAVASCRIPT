@@ -10,4 +10,4 @@ class car {
 }
 
 let forSale = new car ("Ford", "Mustang")
-console.log(forSale.present())
+console.log(forSale.present())  
