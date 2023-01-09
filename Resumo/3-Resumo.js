@@ -93,7 +93,7 @@ class aluno {
     }
 
     get dados () {
-        return `Nome:${this._name}, Idade:${this._age}, Sexo:${this._sex},`
+        return `Nome:${this._name}, Idade:${this._age}, Sexo:${this._sex},Turma:${this._turma}, Código:${this._code}`
     }
 
     set sala (turma) {
@@ -106,9 +106,9 @@ class aluno {
 }
 
 let myCard = new aluno ("Ian", 18, "Masculino")
-aluno.sala = 403 
-aluno.codigo = 2358
-console.log(myCard.dados, `Turma:${aluno.sala}, Código:${aluno.codigo}`)
+myCard.sala = 403 ;
+myCard.codigo = 2358;
+console.log(myCard.dados)
 
 
 //Herança de classe
