@@ -8,12 +8,12 @@ const myCalculator = (n1 ,n2 , callback) => {
     callback(soma);
 }   
 
-myCalculator(2,2,display)
+myCalculator(2,5,display)
 
 //SetTimeout
 
 setTimeout(()=>{
-    myFun();
+    myFun
 }, 1000);
 const myFun = function () {
     console.log("Hello");
@@ -22,7 +22,7 @@ const myFun = function () {
 //SetInterval
 
 setInterval(() => {
-    myCalback();
+    myCalback
 },1000)
 
 const myCalback = () => {

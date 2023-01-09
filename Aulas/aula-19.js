@@ -1,7 +1,7 @@
 //Promises
 const myPromise = new Promise((resolve, reject) => {
-    const saldo = 1700;
-
+    const saldo = 800;
+    
     if (saldo >= 2000) {
         resolve (`Seu saldo de ${saldo} está pronto para sacar!`)
     } 
@@ -18,6 +18,7 @@ const myPromise = new Promise((resolve, reject) => {
 
 myPromise.then((data) =>{
     console.log(data)
+},
+(error) => {
+    console.log(error)
 })
-
-

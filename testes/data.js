@@ -1,5 +1,5 @@
-function myfun (valor)  {
-    let data = new date()
-    console.log(valor - data.getFullYear())
+setInterval(user, 1000)
+
+function user() {
+    console.log("Hello")
 }
-myfun(2)
