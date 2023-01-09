@@ -20,7 +20,7 @@ class carro {
     }
 
     get car () {
-        return this._car  
+        return `Name:${this._car}, Modelo:${this._model}, Year:${this._year}`
     }
 
     set model (model) {
@@ -33,9 +33,9 @@ class carro {
 }
 
 let carName = new carro ("BMW")
-carro.model = "E36"
-carro.year = 1996
-console.log(carName.car, carro.model, carro.year)
+carName.model = "E36"
+carName.year = 1996
+console.log(carName.car)
 
 
 //Herança
@@ -44,7 +44,7 @@ class car {
         this._carName = brand
     }
 
-    present () {
+    present() {
         return "i have a " + this._carName
     }
 }
@@ -55,7 +55,7 @@ class model extends car {
         this._model = mod
     }
 
-    show () {
+    show() {
         return this.present() + " it is a " + this._model
     }
 }
