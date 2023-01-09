@@ -1,4 +1,3 @@
-//Promises
 const myPromise = new Promise((resolve, reject) => {
     const saldo = 1700;
 
@@ -19,5 +18,3 @@ const myPromise = new Promise((resolve, reject) => {
 myPromise.then((data) =>{
     console.log(data)
 })
-
-
