@@ -1,25 +1,14 @@
 //Async & Await
-
-const estado = async function() {
-    const myPromise = new Promise((resolve, reject) => {
-
-        const  value = 12;
-
-        if (value > 18) {
-            resolve(`${value} você está com a pressão muito alta!!!`)
-    }
-        else if (value >= 18) {
-            resolve(`${value} você está com a pressão alta!!!`)
-    }
-        else if (value >= 15) {
-            resolve(`${value} você está com a pressão normal...`)
-    }
-        else if (value <=  10 ) {
-            reject(`${value} você está com a pressão muito baixa!!!`)
-    }
+const display = async function() {
+    let  myPromise2 = new Promise((resolve, reject) => {
+        let sum = 2 + 1;
+        if (sum >= 4) {
+            resolve("True")
+        }
+        else {
+            reject("False")
+        }
     })
-
-    console.log(await myPromise)
+    console.log( await myPromise2)
 }
-
-estado()
+display()
