@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <main>
+        <span id="year"></span>
+        <span>/</span>
+        <span id="horas"></span>
+        <span>/</span>
+        <span id="min"></span>
+        <span>/</span>
+        <span id="seg"></span>
+    
+    </main>
+</body>
+</html>
+
+<style>
+    body {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg, #7fffd4, #1BB17F , #04F7EA);
+
+    }
+
+    main {
+        background-color: #fff;
+        width: 370px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        box-shadow: 2px 2px 4px #000000, 4px 4px 8px #0000003d;
+    }
+
+    span {
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 3rem;
+    }
+</style>
+
+<script>
+    const ano = document.getElementById("year")
+    const horas = document.getElementById("horas");
+    const min = document.getElementById("min");
+    const seg = document.getElementById("seg");
+
+
+    setInterval(timer, 1000);
+
+    function timer() {
+        let d = new Date();
+
+        d.getFullYear()
+        d.getHours()
+        d.getMinutes()
+        d.getSeconds()
+
+        ano.innerHTML = d.getFullYear();
+        horas.innerHTML = d.getHours();
+        min.innerHTML = d.getMinutes();
+        seg.innerHTML = d.getSeconds();
+    }
+</script>
