@@ -7,12 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="demo"></h1>
+    <h1 id="demo1"></h1>
+    <p id="demo2"></p>
 
 
 </body>
 </html>
 
 <script>
-    document.getElementById("demo").innerHTML = "Hello World!";
+
+    //Primeira maneira de acessar
+    const title = document.getElementById("demo1");
+    title.innerHTML = "Olá, meu nome é Ian"
+
+    //Segunda maneira de acessar
+    document.getElementById("demo2").innerHTML = "Lorem ipsum, dolor sit."
+
 </script>

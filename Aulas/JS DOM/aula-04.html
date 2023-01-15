@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <ul id="lista">
+        <li>Batata</li>
+        <li>Arroz</li>
+        <li>Carne</li>
+        <li>Doce</li>
+    </ul>
+</body>
+</html>
+
+<script>
+    const titulo = document.getElementById("title")
+    titulo.innerHTML = "Lista"
+    titulo.style.display = "flex" 
+    titulo.style.justifyContent = "center"
+    titulo.style.alignItems = "center"
+    titulo.style.fontFamily = "monospace"
+    titulo.style.fontSize = "2rem"
+
+    const list = document.getElementsByTagName("ul")[0]
+    list.style.width = "200px"
+    list.style.height = "100px"
+    list.style.backgroundColor = "black"
+    list.style.borderRadius = "8px"
+    list.style.display = "block"
+    list.style.margin = "auto"
+
+    const itens = document.querySelectorAll("#lista li")
+    itens.style.color = "white"
+</script>
