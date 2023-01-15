@@ -12,12 +12,13 @@ const display = async function(n1, n2) {
     const res = await myCalculator(n1, n2)
 
     console.log(`Resultado:${res}`)
+    
     } catch(err) {
         console.log(`Valor não encotrado${err}`)
     }
 }
 
-display("Heelo")
+display()
 
 
 //Prático
