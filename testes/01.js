@@ -9,7 +9,7 @@ class car {
     }
 }
 
-let forSale = new car ("Ford", "Mustang")
+var forSale = new car ("Ford", "Mustang")
 console.log(forSale.present())  
 
 class dados extends car {
@@ -23,6 +23,6 @@ class dados extends car {
     }
 }
 
-let d = new dados("Toyota", "Supra MK4", 1993)
+var d = new dados("Toyota", "Supra MK4", 1993)
 console.log(d.display())
 

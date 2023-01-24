@@ -16,9 +16,10 @@ const myPromise = new Promise((resolve, reject) => {
     }
 })
 
-myPromise.then((data) =>{
-    console.log(data)
-},
-(error) => {
-    console.log(error)
+myPromise.then((data) => {
+    console.log(data);
 })
+.catch((error) => {
+    console.log(error);
+});
+
