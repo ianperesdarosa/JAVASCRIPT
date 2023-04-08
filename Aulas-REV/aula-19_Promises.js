@@ -14,7 +14,7 @@ const myPromise = new Promise((resolve, reject) => {
     }
     }
     
-    myCalculator(3, 3)
+    myCalculator(4, 3)
     
 })
 

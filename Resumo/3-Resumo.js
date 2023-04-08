@@ -22,9 +22,9 @@ console.log(tipo(2))
 //Loops de repetição
 
 //Método For
-const repetição = ( index ,value) => {
+const repetição = (produt ,value) => {
     for (let i = 0; i < value; i++) {
-        console.log(index)
+        console.log(produt);
     }
 }
 
@@ -76,7 +76,7 @@ class car {
         this._mod = model
     }
 
-    present () {
+    present() {
         return `Carro:${this._name} Modelo:${this._mod}`
     }
 }
