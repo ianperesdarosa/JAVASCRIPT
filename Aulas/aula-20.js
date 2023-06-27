@@ -2,7 +2,8 @@
 const fun = async function () {
     let myPromise = new Promise((resolve, reject) => {
         resolve("Abner gay");
-    })
+        reject("Ele não e gay!");
+    }) 
 
     console.log(await myPromise)
 }
@@ -19,5 +20,3 @@ const fun2 = async function () {
 
     console.log(await myPromise)
 }
-
-fun2()
