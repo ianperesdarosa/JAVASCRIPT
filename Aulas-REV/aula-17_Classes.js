@@ -1,49 +1,56 @@
 //Class 
-class estado {
+class Estado {
     constructor (status) {
-        this._status = status   
+        this.status = status   
     }
 
-    display () {
+    display() {
         return `Seu estado terminal está: ${this._status}`
     }
 }
 
-let dados = new estado ("Vivo")
+let dados = new Estado("Vivo")
 console.log(dados.display())
 
 
 //Getters & Setters
-class identificacao  {
-    constructor (name, sobreNome) {
-        this._name = name
-        this._sobreNome = sobreNome
+class Identificacao  {
+    constructor (name, sobreNome, age) {
+        this.name = name
+        this.obreNome = sobreNome
+        this.age = age
     }
 
-    get name () {
-        return `${this._name} ${this._sobreNome}`
+    set name(name) {
+        this.name = name
+    }
+
+    set sobreNome(sobreNome) {
+        this.sobreNome = sobreNome
     }
 
     set age (age) {
         this._idade = age 
     }
 
-    set data (data) {
-        this._nascimento = data 
+    get display() {
+        return `${this.name}, ${this.sobreNome}, ${this.age}`
     }
 }
 
-let card = new identificacao("Ian", "Peres")
-identificacao.age = 18
-identificacao.data = 2004
-console.log(card.name, identificacao.age, identificacao.data)
+let card = new Identificacao()
+card.name = "Ian"
+card.sobreNome = "Peres"
+card.age = 18
+
+
 
 //Herança
-class myCard extends identificacao {
+class MyCard extends Identificacao {
     constructor (name, sobreNome, age, data) {
         super(name, sobreNome)
-        this._age = age
-        this._data = data
+        this.age = age
+        this.data = data
     }
 
     display () {
@@ -51,5 +58,5 @@ class myCard extends identificacao {
     }
 }
 
-let inf = new myCard ("Ian", "Peres", 18, 2004)
+let inf = new MyCard("Ian", "Peres", 18, 2004)
 console.log(inf.display())
