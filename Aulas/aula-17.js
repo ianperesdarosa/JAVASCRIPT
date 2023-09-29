@@ -1,5 +1,5 @@
 //Classes no Javascript
-class person{
+class Person{
     constructor (name) {
         this._name = name;
     }
@@ -9,12 +9,12 @@ class person{
     }
 }
 
-let dados = new person("Ian Peres Da Rosa")
+let dados = new Person("Ian Peres Da Rosa")
 console.log(dados.complete())
 
 
 //Set / Get
-class carro {
+class Carro {
     constructor (car){
         this._car = car
     }
@@ -32,14 +32,14 @@ class carro {
     }
 }
 
-let carName = new carro ("BMW")
+let carName = new Carro ("BMW")
 carName.model = "E36"
 carName.year = 1996
 console.log(carName.car)
 
 
 //Herança
-class car {
+class Car {
     constructor (brand) {
         this._carName = brand
     }
@@ -49,7 +49,7 @@ class car {
     }
 }
 
-class model extends car {
+class Model extends Car {
     constructor (brand, mod){
         super(brand)
         this._model = mod
@@ -60,5 +60,5 @@ class model extends car {
     }
 }
 
-let myCar = new car ("Ford", "Mustang")
+let myCar = new Car ("Ford", "Mustang")
 console.log(myCar.show())
